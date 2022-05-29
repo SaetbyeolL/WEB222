@@ -4,7 +4,7 @@
 //1. function declaration
 // function add(a,b) { 
 //     return a+b;
-// }
+// } 
 // let total=add(1,1);
 //total 2
 
@@ -107,13 +107,13 @@ function generateName(name){
 //18. Function to log all arguments larger than 255: showOutsideByteRange(1, 5, 233, 255, 256, 0) should log 256 to the console. 
 // let showOutsideByteRange = function(){ //변수를 정의해준후 아래에서 적용
 //     for(let i=0;i<arguments.length;i++){
-//         let value=arguments[i]; // arguments가 작성되어있는 2부분을 value로 변경해서 사용할수 있다.첫줄엔 '(...value)로 변경.
+//         let value=arguments[i]; // arguments가 작성되어있는 부분을 value로 변경해서 사용할수 있다.첫줄엔 '(...value)로 변경.
 //         if(value>255){
 //             console.log(value)
 //         }
 //     }
 // };
-// showOutsideByteRange(1, 5, 233, 256, 300, 0);
+// showOutsideByteRange(1, 5, 233, 255, 256, 0);
 
 
 //11. Function to calculate the HST(13%) on a purchase amount.
@@ -165,14 +165,15 @@ function generateName(name){
 // f();//9
 
 
-//IIFE
-let add = (function(value){
-    return function(n){
-        value+=n;
-        return value;
-    }
-})(10);
+//"아이아이에프이"
+// let add = (function(value){
+//     return function(n){
+//         value+=n;
+//         return value;
+//     }
+// })(10);
 
-add(1);//11
-add(1);//12
-value=3;
+// add(1);//11
+// add(1);//12
+// value=3;
+
