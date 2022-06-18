@@ -1,0 +1,175 @@
+<!--week5_1st Class HTML -->
+
+<!-- This is some content
+
+<h1>This is some marked up content.</h1>
+
+<p> - tag
+
+<p> This is an element.</p> - element
+
+<body><p>This p element is inside the body</p></body>
+
+<p id="intro" hidden>This is the introduction</p> -- attribute 
+
+<p>This is some text that contains the  &lt;symbol&Gt;.</p> - entity -->
+
+
+<!-- Using HTML5 for our document
+<!DOCTYPE html> -->
+<!-- Root Element (html) -->
+<!-- <html> -->
+<!-- Info about the page, metadata -->
+<!-- <head> -->
+    <!-- specify the character set to use(utf-8) -->
+    <!-- <meta charset="utf-8"> -->
+    <!-- give my page a title (the top of the page/tab)-->
+    <!-- <title>My first web page</title>
+</head> -->
+
+<!--- Content to be displayed -->
+<!-- <body>content -->
+    <!-- Main Heading (h1) of the page (only one h1) -->
+    <!-- <h1>This is the main heading of my page.</h1>
+    <p>This is some text in my web page.</p>
+</body>
+</html> -->
+
+
+
+
+<!--week5_2nd  Class HTML -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Experiments with HTML Elements</title>
+    </head>
+    <body>
+        <h1>Main Title of Document</h1>
+
+        <h2>Embed</h2>
+
+        <iframe 
+         width="560" 
+         height="315" 
+         src="https://www.youtube.com/embed/6uhRxK_E0m4"
+         frameborder="0"
+         allowfullscreen
+        ></iframe>
+
+        <h2>Media</h2>
+
+        <h3>Video/Audio</h3>
+
+        <video
+        src="https://youtu.be/wnudr9qjrbA"
+        width="400"
+        autoplay
+        controls
+        muted
+        ></video>
+
+        <h3>Images</h3>
+
+        <img 
+          src="toronto.jpg"
+          width="700"  
+        >
+
+        <h2>Hyperlinks</h2>
+
+        <!-- Absolute URL(https:// ...)-->
+        <!-- <a href="url">Inner Text to Display</a> -->
+        <a href="https://web222.ca/">WEB222</a>
+        <!-- Relative URL -->
+        <a href="about.html">About</a>
+        <a href="./data/info.html">Info</a>
+        <!-- ID in the page -->
+        <a href="#address">Address</a>
+        <a href="#date-and-time">Date and Time</a>
+
+
+        <h2>Lists</h2>
+
+        <h3>Ordered List</h3>
+        <ul>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+        </ul>
+
+        <h3>Unordered List</h3>
+        <ol type="A">
+            <li>Red</li>
+            <li>Green</li>
+            <li>
+                <ol>
+                    <li>One</li>
+                    <li>Two</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2>Emphasis</h2>
+
+        <p>
+            <strong>NOTE:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ut justo sed pharetra. Vestibulum erat arcu, mollis vel convallis in, fermentum vel risus. In vitae purus laoreet sem pellentesque fermentum nec a urna. Proin et aliquam elit, et bibendum orci. Phasellus fermentum, nisl quis ornare malesuada, odio tortor malesuada nisi, vel consectetur lacus elit elementum nisi. Duis ex eros, rhoncus in placerat in, pharetra in felis. Etiam nisl erat, porta maximus dignissim at, tincidunt ut nulla. Sed venenatis arcu non purus auctor sagittis. Mauris sed ante posuere, pellentesque quam id, pretium metus. Vivamus ac vestibulum dui, a consectetur libero. Praesent convallis enim erat. Donec nec laoreet odio. Nulla efficitur in nisl ac luctus.
+        </p>
+
+        <h2>Quotes</h2>
+
+        <p>This is a <q>quote</q></p>
+
+        <blockquote>
+            I'm not a great programmer; I'm just a good programmer with great habits.
+            <cite>Kent Beck</cite>
+        </blockquote>
+
+        <h2>Sub- and Super-script</h2>
+
+        <p>H<sub>2</sub>0</p>
+        <P>x<sub>2</sub></P>
+
+        <h2>Code</h2>
+
+        <p>printf("Hello World\n");</p>
+        <code>printf("Hello World\n");</code>
+
+        <h2>Abbreviation</h2>
+
+        HTML <abbr title="Hypertext Markup Language">HTML</abbr>
+        
+        <p>
+        <abbr title="Cascading Style Sheet">CSS</abbr>
+        </p>
+
+        <h2 id="date-and-time"></h2>>Date and Time</h2>
+
+        <p><time>2020-07-11</time></p>
+        <time datetime="2020-07-11">Yesterday</time><br>
+        <time datetime="2020-07-12 17:00">Tomorrow at 5pm</time>
+
+        <h2 id="address">Address</h2>
+
+        <address>1750 Finch Ave E,<br> 
+                 North York,<br> 
+                 ON M2J 2X5
+        </address>
+
+        <h2>Text</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ut justo sed pharetra. Vestibulum erat arcu, mollis vel convallis in, fermentum vel risus. In vitae purus laoreet sem pellentesque fermentum nec a urna. Proin et aliquam elit, et bibendum orci. Phasellus fermentum, nisl quis ornare malesuada, odio tortor malesuada nisi, vel consectetur lacus elit elementum nisi. Duis ex eros, rhoncus in placerat in, pharetra in felis. Etiam nisl erat, porta maximus dignissim at, tincidunt ut nulla. Sed venenatis arcu non purus auctor sagittis. Mauris sed ante posuere, pellentesque quam id, pretium metus. Vivamus ac vestibulum dui, a consectetur libero. Praesent convallis enim erat. Donec nec laoreet odio. Nulla efficitur in nisl ac luctus.</p>
+
+        <p>Sed feugiat ligula at mauris eleifend, a dictum risus elementum. Quisque aliquam libero sed consequat posuere. Aliquam consectetur lectus vel semper consequat. Maecenas rhoncus non ante a ornare. Etiam vitae consectetur leo. Phasellus eu mauris eget metus tincidunt auctor sed ac nibh. Donec urna quam, sagittis eu condimentum sit amet, dapibus nec nunc. Vivamus blandit facilisis ornare. Fusce eu ligula venenatis enim facilisis volutpat.</p>
+
+        <p>Integer at blandit velit. Donec nec tellus lacus. Morbi quis scelerisque orci, nec convallis lacus. Nunc elit mauris, egestas at feugiat id, elementum in eros. Cras eleifend tristique augue nec vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer pharetra metus at nunc eleifend, vulputate posuere libero mollis. Etiam ultrices elit a vulputate tincidunt. Proin tempus ullamcorper dolor. Cras eu rhoncus justo. Integer volutpat sit amet diam ut varius. Nullam egestas mattis dui ut aliquam. Aenean consequat nec purus et laoreet. Quisque rutrum ligula eget nisi fringilla, at feugiat nunc ornare. Morbi vitae odio efficitur enim convallis sollicitudin quis id mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <p>In hac habitasse platea dictumst. Fusce commodo dolor magna, vel vulputate nibh pharetra eu. Cras vehicula, orci sed vehicula maximus, diam est rutrum tortor, vel tristique risus felis viverra diam. Morbi tristique metus urna, vitae elementum eros interdum a. Aliquam facilisis nibh id interdum sagittis. Vestibulum risus nisl, semper sit amet gravida id, ornare efficitur urna. Curabitur auctor lorem consequat commodo consectetur.</p>
+
+        <p>Vivamus non mollis velit. Proin vulputate neque eget pulvinar mollis. Aliquam volutpat pharetra lorem quis ornare. Duis at sem ex. Vivamus iaculis, tellus eget sollicitudin malesuada, enim nisi condimentum lacus, eu facilisis urna augue sit amet magna. Quisque at nunc ex. Sed quis purus at mi sollicitudin tristique.</p>
+
+    </body>
+</html>
+
