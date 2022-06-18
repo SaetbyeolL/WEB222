@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Week 6 Example</title>
+    </head>
+
+    <body>
+
+        <h1>M2N: Willowdale, North York</h1>
+
+        <figure>
+            <picture>
+                <source srcset="./images/north-york.webp" type="image/webp">
+                <source srcset="./images/north-york.avif" type="image/avif">
+                <img src="images/north-york.jpg" alt="Downtown North York">
+            </picture>
+
+            <figcaption>
+                Photo by <a href="https://commons.wikimedia.org/wiki/File:DowntownNorthYork20150914.jpg">PFHLai</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</a>
+                      
+            </figcaption>
+        </figure>
+
+
+
+        <table>
+            <caption>Case by Age Group for FSA M2N</caption>
+
+            <!-- Header at the top-->
+            <thead>
+              <tr>
+                <th>Age Group</th>
+                <th>Cases</th>
+              </tr>
+            </thead>
+
+            <!-- All the rows in the table-->
+            <tbody>
+                <tr>
+                    <td>Unkown</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Under 19</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>20 to 29</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>30 to 39</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>40 to 49</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>50 to 59</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>60 to 69</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>70 to 79</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>80 to 89</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>90 and Order</td>
+                    <td>10</td>
+                </tr>
+
+            </tbody>
+            <!-- The bottom of the table-->
+            <tfoot>
+                <tr>
+                    <th colspan ="2">
+                        Source: <a href="https://www.toronto.ca/home/covid-19/">Toronto Public Health Open Data</a>
+                    </th>
+                </tr>
+
+            </tfoot>
+        </table>
+
+        <!-- External Script to a local file
+        <script src="script.js"></script>
+
+        <script>
+            greeting("WEB222");
+        </script>
+
+        <script>
+            // Inline script
+            console.log(greeting);
+        </script> -->
+
+        <!-- element to use for drawing the chart-->
+        <canvas id="chart"></canvas>
+
+        <!-- include an external chart library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"></script>
+        <!-- include a local script that uses chart.js-->
+        <script src="script.js"></script>
+
+    </body>
+</html>
