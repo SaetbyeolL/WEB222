@@ -1,0 +1,135 @@
+/**
+ * Load two web fonts from Google Fonts:
+ *  1. EB Garamond - https://fonts.google.com/specimen/EB+Garamond
+ *  2. Reem Kufi   - https://fonts.google.com/specimen/Reem+Kufi
+ */
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Reem+Kufi&display=swap');
+
+ /**
+  * Load the Irvin Heading font - https://www.onlinewebfonts.com/download/1e44faec07b8b81f60a3215d76bd0086
+  * NOTE: on GitHub, which is loading over HTTPS, these fonts have to be loaded
+  * over HTTPS vs. HTTP, so instead of using @import url('https://db.onlinewebfonts.com/c/1e44faec07b8b81f60a3215d76bd0086?family=Irvin');
+  * I'm defining the font-face manually with proper HTTPS URLs
+  */
+@import url(//db.onlinewebfonts.com/c/1e44faec07b8b81f60a3215d76bd0086?family=Irvin);
+
+body{
+    margin: 40px;
+}
+
+#social {
+    display: none;
+}
+
+header,
+main {
+    max-width: 700px;
+}
+
+header h1, 
+header h2{
+    font-family: Irvin, serif;
+}
+
+header h1{
+    font-size: 2.4em;
+    font-weight: 100;
+}
+
+header h2{
+    color: red;
+    font-size: .81em;
+}
+
+header p {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: .9em;
+}
+
+#author {
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid lightgray;
+}
+
+main {
+    font-family: 'EB Garamond' 'Times New Roman', serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+    max-width: 550px;
+    margin: 20px 50px;
+}
+
+.first-letter {
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 6px;
+    float: left;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .8em;
+    line-height: 1.2;
+}
+
+.credit {
+    color: #2f2e2e;
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-size: .8em;
+}
+
+.credit a {
+    text-decoration: none;
+    color: #2f2e2e;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    #social {
+        display: block;
+    }
+
+    #social i {
+        padding: 20px 25px
+    }
+
+    header, main {
+        max-width: 100%;
+    }
+
+    header {
+        text-align: center;
+        margin: 10px;
+    }
+
+    main {
+        margin: 10px;
+    }
+}
+
+
+
