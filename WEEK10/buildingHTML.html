@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <h1>Forms and CSS Styling</h1>
+    <p>
+      This form demonstrates many of the topics we have been discussing this week.
+      For this sample form, we are building a User Feedback Form.
+    </p>
+
+    <form action="/feedback" method="post">
+        <label for="feeback-user">Username</label>
+        <input
+            id="feedback-user"
+            name="username"
+            autocomplete="username"
+            text="text"
+            autofocus 
+            tabindex="1" 
+            maxlength="25"
+        >
+
+        <label for="feedback-fullname">Fullname</label>
+        <input
+            id="feedback-fullname"
+            name="name"
+            autocomplete="name"
+            type="text"
+            tabindex="2"
+        >
+
+        <label for="feedback-email">Email</label>
+        <input
+            id="feedback-email"
+            name="email"
+            autocomplete="email"
+            type="email"
+            tabindex="3"
+        >
+
+        <label for="feedback-date">Date</label>
+        <input
+            id="feedback-date"
+            name="date"
+            autocomplete="date"
+            type="date"
+            tabindex="4"
+        >
+
+        <label for="feedback-problem">Problem</label>
+        <input 
+            id="feedback-problem"
+            name="problem"
+            tabindex="5"
+            list="feedback-problems"
+            placeholder="What is this problem related to?"
+        >
+
+        <datalist id="feedback-problems">
+            <option value="Network"></option>
+            <option value="User Interface"></option>
+            <option value="Documentation"></option>
+            <option value="Website"></option>
+            <option value="Other"></option>
+        </datalist>
+
+        <textarea id="feedback-message" name="message" rows="10" tabindex="6"
+        placeholder="Tell us about your problem...">
+        </textarea>
+
+        <label for="feedback-file">Screenshot</label>
+        <input 
+        id="feedback-file"
+        type="file"
+        name="file"
+        tabindex="7"
+        accept="image/png, image/jpeg">
+
+        <input type="submit" name="submit" value="Submit" tabindex="8">
+        <input type="reset" name="reset" value="reset" tabindex="9">
+
+    </form>
+
+  </body>
+</html>

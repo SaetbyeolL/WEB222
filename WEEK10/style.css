@@ -1,0 +1,71 @@
+/*Google web fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans|Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+form {
+    margin-top: 3em;
+    padding: 2em;
+    border: 1px solid black;
+    max-width: 800px;
+    min-width: 400px;
+    margin-left: auto; /*(요소를 중앙에 배치하고싶은경우)*/
+    margin-right: auto; /*(창을 늘려도 안에든 내용은 크기가 늘어나지 않음.고정)*/
+  
+    display: grid; 
+    grid-template-columns: 1fr 3fr; 
+    grid-gap: 10px;
+    align-items: center; /*y축정렬*/
+}
+
+form label {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1.2em;
+    border: 1px solid rgb(206, 212, 218);
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid lightblue;/*border와 달리 아웃라인에 영향끼치지않음.*/
+}
+
+textarea {
+    grid-column: 1 / 3;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 150px;
+    background-color: rgb(0,123,255);
+    color: white;
+}
+
+input[type="submit"]:hover, 
+input[type="submit"]:focus, 
+input[type="reset"]:hover, 
+input[type="reset"]:focus {
+    background-color: blue;
+}
+
+.buttons {
+    grid-column: 2/3;
+    text-align: right;
+}
+
+
